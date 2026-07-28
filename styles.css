@@ -1,0 +1,2259 @@
+/* ==================================================
+   Basic Reset
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   Smooth Scrolling
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==================================================
+   General Page Styles
+================================================== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+
+/* ==================================================
+   1. Header Section
+================================================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 12px 30px;
+
+    background-color: #660000;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Logo and Lab Information */
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* Logo Image */
+
+.logo img {
+    display: block;
+
+    width: 82px;
+    height: 82px;
+
+    object-fit: contain;
+}
+
+
+/* Lab Name */
+
+.lab-title h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+/* Lab Research Subtitle */
+
+.lab-title p {
+    margin-top: 4px;
+
+    color: #e0e0e0;
+
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+
+/* Navigation List */
+
+.nav ul {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* Navigation Links */
+
+.nav ul li a {
+    color: #ffffff;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Navigation Hover Effect */
+
+.nav ul li a:hover {
+    color: #d6b4b4;
+}
+
+
+/* ==================================================
+   2. Hero Section
+================================================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 650px;
+
+    padding: 80px 6%;
+	
+	background-color: #b87474;
+
+    overflow: hidden;
+}
+
+
+/* Hero Text Area */
+
+.hero-content {
+    width: 52%;
+    max-width: 850px;
+}
+
+
+/* Small Hero Label */
+
+.hero-label {
+    margin-bottom: 18px;
+
+    color: #f1d7d7;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* Main Hero Heading */
+
+.hero-content h2 {
+    margin-bottom: 24px;
+
+    color: #ffffff;
+
+    font-size: 4rem;
+    line-height: 1.15;
+
+    font-weight: 700;
+}
+
+
+/* Hero Description */
+
+.hero-description {
+    max-width: 760px;
+
+    margin-bottom: 34px;
+
+    color: #f3e8e8;
+
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+/* Hero Buttons Container */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+/* Shared Hero Button Styles */
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border-radius: 5px;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Primary Button */
+
+.primary-btn {
+    background-color: #ffffff;
+    color: #660000;
+
+    border: 2px solid #ffffff;
+}
+
+
+/* Primary Button Hover */
+
+.primary-btn:hover {
+    background-color: #f1d7d7;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+/* Secondary Button */
+
+.secondary-btn {
+    background-color: transparent;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+}
+
+
+/* Secondary Button Hover */
+
+.secondary-btn:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+
+
+/* Hero Animation Area */
+
+.hero-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+
+/* Hero Animation */
+
+.hero-animation video {
+    display: block;
+
+    width: 100%;
+    max-width: 4000px;
+    height: 220px;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   3. About the Lab Section
+================================================== */
+
+.about-lab {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #ffffff;
+}
+
+
+/* About Section Container */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    gap: 70px;
+}
+
+
+/* About Text Area */
+
+.about-text {
+    width: 52%;
+}
+
+
+/* Small Section Label */
+
+.section-label {
+    margin-bottom: 15px;
+
+    color: #800000;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* About Section Heading */
+
+.about-text h2 {
+    margin-bottom: 25px;
+
+    color: #660000;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* About Section Paragraphs */
+
+.about-text p {
+    margin-bottom: 20px;
+
+    color: #444444;
+
+    font-size: 1.45rem;
+    line-height: 1.7;
+}
+
+
+/* About Section Button */
+
+.about-button {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 15px 28px;
+
+    background-color: #660000;
+    color: #ffffff;
+
+    border: 2px solid #660000;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* About Button Hover Effect */
+
+.about-button:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+/* About Image Area */
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 52%;
+}
+
+
+/* About Image */
+
+.about-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 1000px;
+    height: 620px;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+
+
+/* ==================================================
+   4. Core Research Areas Section
+================================================== */
+
+.research-areas {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #f7eeee;
+}
+
+
+/* Main Research Container */
+
+.research-container {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+}
+
+
+/* Research Section Heading */
+
+.research-heading {
+    max-width: 1000px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+/* Research Section Main Heading */
+
+.research-heading h2 {
+    margin-bottom: 22px;
+
+    color: #660000;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* Research Introduction */
+
+.research-introduction {
+    color: #555555;
+
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+
+/* Research Cards Grid */
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+}
+
+
+/* Individual Research Card */
+
+.research-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 390px;
+
+    padding: 32px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0caca;
+    border-top: 6px solid #660000;
+    border-radius: 10px;
+
+    box-shadow: 0 6px 18px rgba(102, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Research Card Hover Effect */
+
+.research-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 26px rgba(102, 0, 0, 0.20);
+}
+
+
+/* Research Card Icon */
+
+.research-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: 25px;
+
+    background-color: #660000;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* Research Card Heading */
+
+.research-card h3 {
+    margin-bottom: 16px;
+
+    color: #660000;
+
+    font-size: 1.65rem;
+    line-height: 1.3;
+}
+
+
+/* Research Card Description */
+
+.research-card p {
+    margin-bottom: 24px;
+
+    color: #555555;
+
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
+
+
+/* Research Card Link */
+
+.research-card a {
+    display: inline-block;
+
+    margin-top: auto;
+
+    color: #800000;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* Research Card Link Hover */
+
+.research-card a:hover {
+    color: #b87474;
+    text-decoration: underline;
+}
+
+
+
+
+/* ==================================================
+   Research Impact Section
+================================================== */
+
+.research-impact {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #660000;
+}
+
+
+/* Research Impact Container */
+
+.impact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    gap: 70px;
+}
+
+
+/* Impact Text Area */
+
+.impact-content {
+    width: 45%;
+}
+
+
+/* Impact Section Label */
+
+.research-impact .section-label {
+    color: #e7caca;
+}
+
+
+/* Impact Main Heading */
+
+.impact-content h2 {
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* Impact Paragraphs */
+
+.impact-content p {
+    margin-bottom: 20px;
+
+    color: #f0dddd;
+
+    font-size: 1.35rem;
+    line-height: 1.7;
+}
+
+
+/* Impact Button */
+
+.impact-button {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 15px 28px;
+
+    background-color: #ffffff;
+    color: #660000;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Impact Button Hover */
+
+.impact-button:hover {
+    background-color: transparent;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* Impact Cards Grid */
+
+.impact-grid {
+    display: grid;
+
+    width: 50%;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+
+/* Individual Impact Card */
+
+.impact-card {
+    min-height: 220px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Impact Card Hover */
+
+.impact-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.30);
+}
+
+
+/* Impact Card Heading */
+
+.impact-card h3 {
+    margin-bottom: 15px;
+
+    color: #660000;
+
+    font-size: 1.55rem;
+    line-height: 1.3;
+}
+
+
+/* Impact Card Description */
+
+.impact-card p {
+    color: #555555;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+
+
+
+/* ==================================================
+   Latest News Section
+================================================== */
+
+.latest-news {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #ffffff;
+}
+
+
+/* Main News Container */
+
+.news-container {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+}
+
+
+/* News Heading Area */
+
+.news-heading {
+    max-width: 950px;
+
+    margin-bottom: 55px;
+}
+
+
+/* News Main Heading */
+
+.news-heading h2 {
+    margin-bottom: 20px;
+
+    color: #660000;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* News Introduction */
+
+.news-heading > p:last-child {
+    color: #555555;
+
+    font-size: 1.35rem;
+    line-height: 1.7;
+}
+
+
+/* News Cards Grid */
+
+.news-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* Individual News Card */
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 430px;
+
+    overflow: hidden;
+
+    background-color: #f9f4f4;
+
+    border: 1px solid #e3cccc;
+    border-radius: 10px;
+
+    box-shadow: 0 6px 18px rgba(102, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* News Card Hover Effect */
+
+.news-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 13px 28px rgba(102, 0, 0, 0.18);
+}
+
+
+/* News Date */
+
+.news-date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 22px 28px;
+
+    background-color: #660000;
+    color: #ffffff;
+}
+
+
+/* News Day Number */
+
+.news-date span {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+/* News Month and Year */
+
+.news-date small {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+
+/* News Content Area */
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding: 30px;
+}
+
+
+/* News Category */
+
+.news-category {
+    margin-bottom: 12px;
+
+    color: #800000;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+
+/* News Title */
+
+.news-content h3 {
+    margin-bottom: 18px;
+
+    color: #660000;
+
+    font-size: 1.65rem;
+    line-height: 1.35;
+}
+
+
+/* News Description */
+
+.news-content > p:not(.news-category) {
+    margin-bottom: 24px;
+
+    color: #555555;
+
+    font-size: 1.1rem;
+    line-height: 1.65;
+}
+
+
+/* News Link */
+
+.news-content a {
+    display: inline-block;
+
+    margin-top: auto;
+
+    color: #800000;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* News Link Hover */
+
+.news-content a:hover {
+    color: #b87474;
+    text-decoration: underline;
+}
+
+
+/* View All News Button Area */
+
+.news-button-container {
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+
+/* View All News Button */
+
+.news-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #660000;
+    color: #ffffff;
+
+    border: 2px solid #660000;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* View All News Button Hover */
+
+.news-button:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+
+
+/* ==================================================
+   Join or Collaborate With Us Section
+================================================== */
+
+.collaboration-section {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #f7eeee;
+}
+
+
+/* Collaboration Container */
+
+.collaboration-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    gap: 70px;
+}
+
+
+/* Collaboration Text Area */
+
+.collaboration-content {
+    width: 46%;
+}
+
+
+/* Collaboration Heading */
+
+.collaboration-content h2 {
+    margin-bottom: 25px;
+
+    color: #660000;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* Collaboration Paragraphs */
+
+.collaboration-content p {
+    margin-bottom: 20px;
+
+    color: #555555;
+
+    font-size: 1.35rem;
+    line-height: 1.7;
+}
+
+
+/* Collaboration Buttons Container */
+
+.collaboration-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-top: 32px;
+}
+
+
+/* Shared Collaboration Button */
+
+.collaboration-btn {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border: 2px solid #660000;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Primary Collaboration Button */
+
+.primary-collaboration-btn {
+    background-color: #660000;
+    color: #ffffff;
+}
+
+
+/* Primary Button Hover */
+
+.primary-collaboration-btn:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+/* Secondary Collaboration Button */
+
+.secondary-collaboration-btn {
+    background-color: transparent;
+    color: #660000;
+}
+
+
+/* Secondary Button Hover */
+
+.secondary-collaboration-btn:hover {
+    background-color: #660000;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* Opportunity List */
+
+.opportunity-list {
+    display: flex;
+    flex-direction: column;
+
+    width: 49%;
+
+    gap: 20px;
+}
+
+
+/* Individual Opportunity Item */
+
+.opportunity-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 22px;
+
+    padding: 26px;
+
+    background-color: #ffffff;
+
+    border-left: 6px solid #660000;
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(102, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Opportunity Item Hover */
+
+.opportunity-item:hover {
+    transform: translateX(8px);
+
+    box-shadow: 0 10px 24px rgba(102, 0, 0, 0.18);
+}
+
+
+/* Opportunity Number */
+
+.opportunity-number {
+    min-width: 55px;
+
+    color: #b87474;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* Opportunity Heading */
+
+.opportunity-item h3 {
+    margin-bottom: 10px;
+
+    color: #660000;
+
+    font-size: 1.45rem;
+}
+
+
+/* Opportunity Description */
+
+.opportunity-item p {
+    color: #555555;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+
+
+/* ==================================================
+   People Section
+================================================== */
+
+.people-section {
+    width: 100%;
+    padding: 100px 6%;
+
+    background-color: #ffffff;
+}
+
+
+/* Main People Container */
+
+.people-container {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+}
+
+
+/* People Section Heading */
+
+.people-heading {
+    max-width: 1000px;
+
+    margin-bottom: 55px;
+}
+
+
+/* People Main Heading */
+
+.people-heading h2 {
+    margin-bottom: 20px;
+
+    color: #660000;
+
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+
+/* People Introduction */
+
+.people-heading > p:last-child {
+    color: #555555;
+
+    font-size: 1.35rem;
+    line-height: 1.7;
+}
+
+
+/* Principal Investigator Area */
+
+.principal-investigator {
+    display: flex;
+    align-items: center;
+
+    gap: 55px;
+
+    margin-bottom: 75px;
+    padding: 42px;
+
+    background-color: #f7eeee;
+
+    border-left: 8px solid #660000;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(102, 0, 0, 0.12);
+}
+
+
+/* Principal Investigator Image Area */
+
+.pi-image {
+    flex-shrink: 0;
+
+    width: 330px;
+}
+
+
+/* Principal Investigator Image */
+
+.pi-image img {
+    display: block;
+
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 10px;
+}
+
+
+/* Principal Investigator Content */
+
+.pi-content {
+    flex: 1;
+}
+
+
+/* Member Category */
+
+.member-category {
+    margin-bottom: 10px;
+
+    color: #800000;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* Principal Investigator Name */
+
+.pi-content h3 {
+    margin-bottom: 8px;
+
+    color: #660000;
+
+    font-size: 2.5rem;
+}
+
+
+/* Member Position */
+
+.member-position {
+    margin-bottom: 20px;
+
+    color: #777777;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+/* Principal Investigator Description */
+
+.pi-content > p:not(.member-category):not(.member-position) {
+    margin-bottom: 17px;
+
+    color: #555555;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+
+/* Member Links */
+
+.member-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+
+/* Individual Member Link */
+
+.member-links a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #660000;
+    color: #ffffff;
+
+    border: 2px solid #660000;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Member Link Hover */
+
+.member-links a:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-2px);
+}
+
+
+/* Research Members Heading */
+
+.members-heading {
+    margin-bottom: 32px;
+}
+
+
+/* Research Members Title */
+
+.members-heading h3 {
+    color: #660000;
+
+    font-size: 2.4rem;
+}
+
+
+/* Research Members Grid */
+
+.people-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* Individual Member Card */
+
+.people-card {
+    overflow: hidden;
+
+    background-color: #f9f4f4;
+
+    border: 1px solid #e3cccc;
+    border-radius: 10px;
+
+    box-shadow: 0 6px 18px rgba(102, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Member Card Hover */
+
+.people-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 13px 28px rgba(102, 0, 0, 0.18);
+}
+
+
+/* Member Image */
+
+.member-image img {
+    display: block;
+
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-bottom: 5px solid #660000;
+}
+
+
+/* Member Card Content */
+
+.member-content {
+    padding: 28px;
+}
+
+
+/* Member Name */
+
+.member-content h3 {
+    margin-bottom: 7px;
+
+    color: #660000;
+
+    font-size: 1.75rem;
+}
+
+
+/* Member Description */
+
+.member-content > p:not(.member-category):not(.member-position) {
+    color: #555555;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+
+/* View All Members Button Container */
+
+.people-button-container {
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+
+/* View All Members Button */
+
+.people-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #660000;
+    color: #ffffff;
+
+    border: 2px solid #660000;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* View All Members Button Hover */
+
+.people-button:hover {
+    background-color: #ffffff;
+    color: #660000;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* ==================================================
+   9. Footer Section
+================================================== */
+
+.footer {
+    width: 100%;
+
+    padding: 70px 6% 25px;
+
+    background-color: #4d0000;
+    color: #ffffff;
+}
+
+
+/* Main Footer Container */
+
+.footer-container {
+    display: grid;
+
+    grid-template-columns: 1.6fr 0.8fr 0.9fr 1fr;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    gap: 60px;
+}
+
+
+/* Footer Lab Information */
+
+.footer-about {
+    max-width: 520px;
+}
+
+
+/* Footer Logo and Title */
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+
+/* Footer Logo */
+
+.footer-logo {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+}
+
+
+/* Footer Lab Name */
+
+.footer-logo-section h2 {
+    margin-bottom: 5px;
+
+    color: #ffffff;
+
+    font-size: 2rem;
+}
+
+
+/* Footer Lab Subtitle */
+
+.footer-logo-section p {
+    color: #e7cccc;
+
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+
+/* Footer Description */
+
+.footer-description {
+    color: #eadada;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* Footer Column Heading */
+
+.footer-column h3 {
+    margin-bottom: 22px;
+
+    color: #ffffff;
+
+    font-size: 1.35rem;
+}
+
+
+/* Footer Lists */
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* Footer List Items */
+
+.footer-column ul li {
+    margin-bottom: 13px;
+}
+
+
+/* Footer Links */
+
+.footer-column a {
+    color: #e8d5d5;
+
+    font-size: 1rem;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Footer Link Hover */
+
+.footer-column a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* Footer Contact Text */
+
+.footer-contact p {
+    margin-bottom: 12px;
+
+    color: #e8d5d5;
+
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Footer Contact Email */
+
+.footer-contact a {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* Footer Bottom Area */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1600px;
+
+    margin: 55px auto 0;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* Footer Bottom Text */
+
+.footer-bottom p {
+    color: #ddc5c5;
+
+    font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   Responsive Design
+================================================== */
+
+/* Tablet and Smaller Desktop Screens */
+
+@media screen and (max-width: 1400px) {
+
+    .lab-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .lab-title p {
+        font-size: 1.25rem;
+    }
+
+    .nav ul {
+        gap: 22px;
+    }
+
+    .nav ul li a {
+        font-size: 1.25rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero-description {
+        font-size: 1.3rem;
+    }
+	
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Tablet Screens */
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 18px 24px;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        padding: 70px 40px;
+
+        background: linear-gradient(
+            180deg,
+            #660000 0%,
+            #800000 55%,
+            #ffffff 100%
+        );
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+    .hero-image img {
+        max-width: 800px;
+    }
+	
+	.about-container {
+        flex-direction: column;
+    }
+	
+	.about-text,
+    .about-image {
+        width: 100%;
+    }
+	
+	.about-image {
+        margin-top: 30px;
+    }
+
+    .about-image img {
+        max-width: 800px;
+    }
+	
+	.research-heading h2 {
+       font-size: 3rem;
+    }
+
+    .research-introduction {
+       font-size: 1.25rem;
+    }
+	
+	.impact-container {
+       flex-direction: column;
+    }
+
+    .impact-content,
+    .impact-grid {
+       width: 100%;
+    }
+
+    .impact-content h2 {
+       font-size: 3rem;
+    }
+	
+	.news-grid {
+       grid-template-columns: 1fr;
+    }
+
+    .news-heading h2 {
+       font-size: 3rem;
+    }
+	
+	.collaboration-container {
+       flex-direction: column;
+    }
+
+    .collaboration-content,
+    .opportunity-list {
+       width: 100%;
+    }
+
+    .collaboration-content h2 {
+       font-size: 3rem;
+    }
+	
+	.principal-investigator {
+       align-items: flex-start;
+    }
+
+    .pi-image {
+       width: 280px;
+    }
+
+    .pi-image img {
+       height: 340px;
+    }
+
+    .people-grid {
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .people-heading h2 {
+       font-size: 3rem;
+    }
+	
+	.footer-container {
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-about {
+       max-width: none;
+    }
+	
+	
+}
+
+
+/* Small Mobile Screens */
+
+@media screen and (max-width: 600px) {
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .lab-title h1 {
+        font-size: 1.7rem;
+    }
+
+    .lab-title p {
+        font-size: 1rem;
+    }
+
+    .nav ul {
+        gap: 12px 18px;
+    }
+
+    .nav ul li a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding: 55px 24px 80px;
+    }
+
+    .hero-label {
+        font-size: 0.95rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+	
+	.hero-animation video {
+       height: 300px;
+    }
+	
+    .about-lab {
+        padding: 70px 24px;
+    }
+
+    .section-label {
+        font-size: 0.95rem;
+    }
+
+    .about-text h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .about-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 320px;
+    }	
+	
+	.research-areas {
+       padding: 70px 24px;
+    }
+
+    .research-heading {
+       margin-bottom: 40px;
+    }
+
+    .research-heading h2 {
+       font-size: 2.4rem;
+    }
+
+    .research-introduction {
+       font-size: 1.1rem;
+    }
+
+    .research-grid {
+       grid-template-columns: 1fr;
+    }
+
+    .research-card {
+       min-height: auto;
+       padding: 26px;
+    }
+
+    .research-card h3 {
+       font-size: 1.5rem;
+    }
+
+    .research-card p {
+       font-size: 1.05rem;
+    }
+	
+	.research-impact {
+       padding: 70px 24px;
+    }
+
+    .impact-content h2 {
+       font-size: 2.4rem;
+    }
+
+    .impact-content p {
+       font-size: 1.1rem;
+    }
+
+    .impact-grid {
+       grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+       min-height: auto;
+       padding: 26px;
+    }
+
+    .impact-button {
+       width: 100%;
+       text-align: center;
+    }
+	
+	.latest-news {
+       padding: 70px 24px;
+    }
+
+    .news-heading {
+       margin-bottom: 40px;
+    }
+
+    .news-heading h2 {
+       font-size: 2.4rem;
+    }
+
+    .news-heading > p:last-child {
+       font-size: 1.1rem;
+    }
+
+    .news-card {
+       min-height: auto;
+    }
+
+    .news-content {
+       padding: 24px;
+    }
+
+    .news-content h3 {
+       font-size: 1.45rem;
+    }
+
+    .news-content > p:not(.news-category) {
+       font-size: 1.05rem;
+    }
+
+    .news-button {
+       width: 100%;
+       text-align: center;
+    }
+	
+	.collaboration-section {
+       padding: 70px 24px;
+    }
+
+    .collaboration-content h2 {
+       font-size: 2.4rem;
+    }
+
+    .collaboration-content p {
+       font-size: 1.1rem;
+    }
+
+    .collaboration-buttons {
+       flex-direction: column;
+    }
+
+    .collaboration-btn {
+       width: 100%;
+       text-align: center;
+    }
+
+    .opportunity-item {
+       padding: 22px;
+    }
+
+    .opportunity-number {
+       min-width: 42px;
+       font-size: 1.4rem;
+    }
+
+    .opportunity-item h3 {
+       font-size: 1.35rem;
+    }
+	
+	.people-section {
+       padding: 70px 24px;
+    }
+
+    .people-heading {
+       margin-bottom: 40px;
+    }
+
+    .people-heading h2 {
+       font-size: 2.4rem;
+    }
+
+    .people-heading > p:last-child {
+       font-size: 1.1rem;
+    }
+
+    .principal-investigator {
+       flex-direction: column;
+
+       gap: 30px;
+
+       padding: 25px;
+    } 
+
+    .pi-image {
+       width: 100%;
+    }
+
+    .pi-image img {
+       height: 360px;
+    }
+
+    .pi-content h3 {
+       font-size: 2rem;
+    }
+
+    .pi-content > p:not(.member-category):not(.member-position) {
+       font-size: 1.05rem;
+    }
+
+    .people-grid {
+       grid-template-columns: 1fr;
+    }
+
+    .member-image img {
+       height: 330px;
+    }
+
+    .member-links {
+       flex-direction: column;
+    }
+
+    .member-links a,
+    .people-button {
+       width: 100%;
+
+       text-align: center;
+    }
+	
+	.footer {
+       padding: 60px 24px 24px;
+    }
+
+    .footer-container {
+       grid-template-columns: 1fr;
+       gap: 40px;
+    }
+
+    .footer-logo {
+       width: 65px;
+       height: 65px;
+    }
+
+    .footer-logo-section h2 {
+       font-size: 1.7rem;
+    }
+
+    .footer-bottom {
+       flex-direction: column;
+       align-items: flex-start;
+
+       gap: 8px;
+
+       margin-top: 40px;
+    }
+}
+
+
+
+
