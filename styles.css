@@ -1909,6 +1909,14 @@ body {
         max-width: 800px;
     }
 	
+	.hero-animation {
+        width: 100%;
+     }
+
+    .animation-item video {
+        height: 360px;
+    }
+	
 	.about-container {
         flex-direction: column;
     }
@@ -2055,6 +2063,13 @@ body {
 	
 	.hero-animation video {
        height: 300px;
+    }
+    .animation-item h3 {
+        font-size: 1rem;
+    }
+
+    .animation-item video {
+        height: 220px;
     }
 	
     .about-lab {
