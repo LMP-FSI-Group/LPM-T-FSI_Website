@@ -349,6 +349,40 @@ body {
     object-position: left;
 }
 
+/* Hero Animation Reference */
+
+.hero-animation-reference {
+    margin-top: 14px;
+    padding: 14px 18px;
+
+    background-color: rgba(255, 255, 255, 0.14);
+
+    border-left: 4px solid #660000;
+    border-radius: 5px;
+}
+
+.hero-animation-reference p {
+    margin-bottom: 7px;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hero-animation-reference a {
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+.hero-animation-reference a:hover {
+    color: #f1d7d7;
+}
+
 
 
 
