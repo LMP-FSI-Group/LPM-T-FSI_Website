@@ -26,6 +26,12 @@ body {
 }
 
 
+
+
+
+
+
+
 /* ==================================================
    1. Header Section
 ================================================== */
@@ -36,27 +42,35 @@ body {
     align-items: center;
 
     width: 100%;
-    padding: 12px 30px;
+
+    padding: 18px 35px;
 
     background-color: #660000;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
+
+/* ==================================================
+   Left Side
+================================================== */
+
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 16px;
 }
 
-.logo img {
-    display: block;
 
-    width: 120px;
-    height: 120px;
+/* Group Name + Full Form */
 
-    object-fit: contain;
+.lab-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+
+/* LPM-FSI Group */
 
 .lab-title h1 {
     margin: 0;
@@ -65,34 +79,132 @@ body {
 
     font-size: 3rem;
     font-weight: 700;
+    line-height: 1.05;
 }
 
-.nav ul {
-    display: flex;
-    align-items: center;
 
-    gap: 38px;
+/* Lumped-Parameter Modeling Fluid-Structure Interaction */
 
-    margin: 0;
-    padding: 0;
+.lab-title p {
+    margin: 6px 0 0 0;
 
-    list-style: none;
-}
-
-.nav ul li a {
     color: #ffffff;
 
-    font-size: 1.5rem;
+    font-size: 2.15rem;
     font-weight: 500;
-
-    text-decoration: none;
-
-    transition: color 0.3s ease;
+    line-height: 1.2;
 }
 
-.nav ul li a:hover {
-    color: #d6b4b4;
+
+/* ==================================================
+   Right Side - Mississippi State University
+================================================== */
+
+.university-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+
+.university-name h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+
+    text-align: right;
+}
+
+
+/* ==================================================
+   Maintenance Notice
+================================================== */
+
+.maintenance-notice {
+    width: 100%;
+
+    padding: 8px 30px;
+
+    background-color: #f4e3a1;
+    color: #4d3300;
+
+    text-align: center;
+}
+
+
+.maintenance-notice p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+/* ==================================================
+   Responsive Header
+================================================== */
+
+@media screen and (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding: 18px 24px;
+    }
+
+
+    .lab-title h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .lab-title p {
+        font-size: 1rem;
+    }
+
+
+    .university-name h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .lab-title h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .lab-title p {
+        font-size: 0.85rem;
+    }
+
+
+    .university-name h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .maintenance-notice p {
+        font-size: 0.75rem;
+    }
+}
+
+
+
+
+
+
+
 
 
 /* ==================================================
@@ -118,6 +230,17 @@ body {
     font-weight: 700;
     line-height: 1.5;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================================================
@@ -189,6 +312,20 @@ body {
 
     transform: translateY(-3px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================================================
@@ -340,6 +477,14 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
 /* ==================================================
    4. NSF Fellowship Opportunity
 ================================================== */
@@ -352,10 +497,15 @@ body {
     background-color: #f7eeee;
 }
 
+
+/* Main Fellowship Container */
+
 .nsf-fellowship-container {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 170px 1fr 170px;
+
     align-items: center;
-    justify-content: space-between;
 
     width: 100%;
     max-width: 1600px;
@@ -370,11 +520,42 @@ body {
     box-shadow: 0 8px 22px rgba(102, 0, 0, 0.10);
 }
 
+
+/* ==================================================
+   NSF Logo - Left Side
+================================================== */
+
+.nsf-logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+.nsf-logo-area img {
+    display: block;
+
+    width: 130px;
+    height: 130px;
+
+    object-fit: contain;
+}
+
+
+/* ==================================================
+   Fellowship Text - Center
+================================================== */
+
 .nsf-fellowship-content {
-    flex: 1;
+    width: 100%;
+
+    padding: 0 25px;
 
     text-align: center;
 }
+
 
 .nsf-fellowship-content h2 {
     margin-bottom: 10px;
@@ -385,14 +566,6 @@ body {
     line-height: 1.2;
 }
 
-.nsf-project-title {
-    margin-bottom: 10px;
-
-    color: #333333;
-
-    font-size: 1.15rem;
-    line-height: 1.45;
-}
 
 .nsf-award-info {
     margin-bottom: 8px;
@@ -402,27 +575,46 @@ body {
     font-size: 1.2rem;
 }
 
+
 .nsf-award-info span {
     margin: 0 12px;
 }
 
+
 .nsf-pi {
+    margin-bottom: 8px;
+
     color: #333333;
 
     font-size: 1.1rem;
 }
 
-.nsf-logo-area {
+
+.nsf-project-title {
+    margin-bottom: 0;
+
+    color: #333333;
+
+    font-size: 1.35rem;
+    line-height: 1.45;
+}
+
+
+
+/* ==================================================
+   Mississippi State Logo - Right Side
+================================================== */
+
+.msu-logo-area {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 180px;
-
-    margin-left: 40px;
+    width: 100%;
 }
 
-.nsf-logo-area img {
+
+.msu-logo-area img {
     display: block;
 
     width: 130px;
@@ -430,6 +622,70 @@ body {
 
     object-fit: contain;
 }
+
+
+/* ==================================================
+   Responsive Design
+================================================== */
+
+@media screen and (max-width: 900px) {
+
+    .nsf-fellowship-container {
+        grid-template-columns: 110px 1fr 110px;
+
+        padding: 25px 20px;
+    }
+
+    .nsf-logo-area img,
+    .msu-logo-area img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nsf-fellowship-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .nsf-project-title {
+        font-size: 1.05rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .nsf-fellowship-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .nsf-fellowship-content {
+        padding: 0;
+    }
+
+    .nsf-award-info {
+        display: flex;
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .nsf-award-info span {
+        display: none;
+    }
+
+    .nsf-logo-area img,
+    .msu-logo-area img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+
+
+
+
 
 
 /* ==================================================
@@ -444,6 +700,7 @@ body {
     background-color: #f7eeee;
 }
 
+
 .collaboration-container {
     display: block;
 
@@ -453,9 +710,13 @@ body {
     margin: 0 auto;
 }
 
+
 .collaboration-content {
     width: 100%;
 }
+
+
+/* Main Heading */
 
 .collaboration-content h2 {
     margin-bottom: 25px;
@@ -468,6 +729,9 @@ body {
     text-align: center;
 }
 
+
+/* Description / Research Areas */
+
 .collaboration-content p {
     width: 100%;
 
@@ -479,52 +743,136 @@ body {
     line-height: 1.7;
 }
 
+
 .collaboration-content strong {
     color: #660000;
 }
 
+
+/* ==================================================
+   Application Buttons Container
+================================================== */
+
 .collaboration-buttons {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
     width: 100%;
 
-    gap: 18px;
+    gap: 8px;
 
-    margin-top: 32px;
+    margin-top: 38px;
 }
 
-.collaboration-btn {
-    display: inline-block;
 
-    padding: 15px 28px;
+/* Shared Button Style */
+
+.collaboration-btn {
+    display: block;
+
+    width: 360px;
+
+    padding: 13px 22px;
 
     border: 2px solid #660000;
-    border-radius: 5px;
+    border-radius: 4px;
 
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
 
+    text-align: center;
     text-decoration: none;
 
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
-        transform 0.3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.primary-collaboration-btn {
+
+/* ==================================================
+   NSF ETAP + EGFP Buttons
+================================================== */
+
+.fellowship-btn {
+    background-color: #3bcea0;
+    color: #060000;
+}
+
+
+.fellowship-btn:hover {
+    background-color: #54e5b7;
+    color: #060000;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(59, 206, 160, 0.30);
+}
+
+
+/* ==================================================
+   Mississippi State University Button
+================================================== */
+
+.msu-application-btn {
     background-color: #660000;
     color: #ffffff;
 }
 
-.primary-collaboration-btn:hover {
-    background-color: #ffffff;
-    color: #660000;
 
-    transform: translateY(-3px);
+.msu-application-btn:hover {
+    background-color: #800000;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(102, 0, 0, 0.25);
 }
+
+
+/* ==================================================
+   Mobile Responsive Design
+================================================== */
+
+@media screen and (max-width: 600px) {
+
+    .collaboration-section {
+        padding: 60px 24px;
+    }
+
+
+    .collaboration-content h2 {
+        font-size: 2.4rem;
+    }
+
+
+    .collaboration-content p {
+        font-size: 1.1rem;
+    }
+
+
+    .collaboration-btn {
+        width: 100%;
+
+        max-width: 360px;
+
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================================================
