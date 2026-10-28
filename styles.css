@@ -424,8 +424,6 @@ body {
 
 
 
-
-
 /* ==================================================
    Graduate Research Opportunities
 ================================================== */
@@ -470,7 +468,16 @@ body {
 }
 
 
+/* Keep description text black */
+
 .collaboration-content strong {
+    color: #080808;
+}
+
+
+/* Engineering discipline names */
+
+.discipline-name {
     color: #660000;
 }
 
@@ -478,10 +485,6 @@ body {
 .collaboration-intro {
     font-weight: 700;
 }
-
-
-
-
 
 
 
@@ -1124,7 +1127,7 @@ body {
     display: block;
 
     width: 100%;
-    height: 285px;
+    height: 680px;
 
     object-fit: cover;
     object-position: left center;
@@ -1330,7 +1333,7 @@ body {
 .member-position {
     margin-bottom: 20px;
 
-    color: #777777;
+    color: #080808;
 
     font-size: 1.15rem;
     font-weight: 700;
@@ -1339,7 +1342,7 @@ body {
 .pi-content > p:not(.member-category):not(.member-position) {
     margin-bottom: 17px;
 
-    color: #555555;
+    color: #080808;
 
     font-size: 1.2rem;
     line-height: 1.7;
@@ -1450,7 +1453,7 @@ body {
 }
 
 .member-content > p:not(.member-category):not(.member-position) {
-    color: #555555;
+    color: #080808;
 
     font-size: 1.05rem;
     line-height: 1.65;
